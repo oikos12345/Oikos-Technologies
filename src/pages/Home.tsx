@@ -1,8 +1,22 @@
 // src/pages/Home.tsx
 import HomeHeader from '../components/HomeHeader';
 import Footer from '../shared/partials/Footer';
-import '../css/style.css'
+import '../css/style.css';
 import GoalCard from '../shared/components/GoalCard';
+
+// --- IMPORT ALL MEDIA ASSETS HERE ---
+// Videos
+import HOMEPAGE_BG_Video from '../assets/media/HOMEPAGE BG.mp4';
+import OUR_GOAL_BG_Video from '../assets/media/OUR GOAL BG.mp4';
+
+// Images
+import OIKOS_NO_BG_Image from '../assets/media/OIKOS NO BG.png';
+import WHYCHOOSEUS_Image from '../assets/media/WHYCHOOSEUS.png';
+import WEBSITEDEV_Image from '../assets/media/WEBSITEDEV.jpg';
+import WEBAPP_Image from '../assets/media/WEBAPP.jpg';
+import ITSUPPORT_ICON_Image from '../assets/media/ITSUPPORT ICON.jpg';
+import CREATIVE_ICON_Image from '../assets/media/CREATIVE ICON.jpg'; // Note: You have two items using this image.
+import SOCMED_ICON_Image from '../assets/media/SOCMED ICON.png';
 
 
 const Home = () => {
@@ -12,12 +26,14 @@ const Home = () => {
 
       <section className="hero-video">
         <video autoPlay muted loop playsInline>
-          <source src="/src/assets/media/HOMEPAGE BG.mp4" type="video/mp4" />
+          {/* Use the imported video variable */}
+          <source src={HOMEPAGE_BG_Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <div className="logoTitle">
-          <img src="/src/assets/media/OIKOS NO BG.png" alt="Oikos Logo" />
+          {/* Use the imported image variable */}
+          <img src={OIKOS_NO_BG_Image} alt="Oikos Logo" />
           <h1>BRINGING TECHNOLOGY CLOSER TO HOME</h1>
         </div>
 
@@ -29,6 +45,12 @@ const Home = () => {
               innovative technology solutions.
             </p>
           </div>
+          {/* Ensure your anchor links are correctly handled for React Router or GitHub Pages.
+              If you're using React Router, this should be <Link to="/about">Know More</Link>
+              If it's just a static HTML file on GitHub Pages, /about.html might work,
+              but relative paths like ../about.html are safer if not using React Router.
+              For now, keeping it as is, assuming it works with your setup.
+          */}
           <a href="/about.html" className="btn">
             Know More
           </a>
@@ -60,7 +82,8 @@ const Home = () => {
 
         <div className="main-container2">
           <div className="image">
-            <img src="/src/assets/media/WHYCHOOSEUS.png" alt="" />
+            {/* Use the imported image variable */}
+            <img src={WHYCHOOSEUS_Image} alt="Why Choose Us" /> {/* Added alt for accessibility */}
           </div>
 
           <div className="paragraphS22">
@@ -85,7 +108,8 @@ const Home = () => {
 
       <section className="section3">
         <video autoPlay muted loop playsInline>
-          <source src="/src/assets/media/OUR GOAL BG.mp4" type="video/mp4" />
+          {/* Use the imported video variable */}
+          <source src={OUR_GOAL_BG_Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -122,61 +146,66 @@ const Home = () => {
         <div className="space"></div>
       </section>
 
-    <section className="carousel-section">
+      <section className="carousel-section">
         <h1>WHAT WE OFFER</h1>
         <div className="carousel-container">
-
-            <div className="carousel">
-                <div className="item">
-                    <img src="/src/assets/media/WEBSITEDEV.jpg" alt=""/>
-                    <h3>Website Development</h3>
-                    <p>Crafting responsive and user-friendly websites tailored to your brand's identity and goals.</p>
-                    <a href="/services.html"><button>More</button></a>
-                </div>
-
-                <div className="item">
-                    <img src="/src/assets/media/WEBAPP.jpg" alt=""/>
-                    <h3>Web App Development</h3>
-                    <p>Building custom web applications that streamline operations and enhance user engagement.</p>
-                    <a href="/services.html"><button>More</button></a>
-                </div>
-
-                <div className="item">
-                    <img src="/src/assets/media/ITSUPPORT ICON.jpg" alt=""/>
-                    <h3>IT Support Services</h3>
-                    <p>Providing reliable technical assistance to ensure your IT infrastructure runs smoothly.</p>
-                    <a href="/services.html"><button>More</button></a>
-                </div>
-
-                <div className="item">
-                    <img src="/src/assets/media/CREATIVE ICON.jpg" alt=""/>
-                    <h3>Creative Support Services</h3>
-                    <p>Offering graphic design and content creation to bring your ideas to life visually.</p>
-                    <a href="/services.html"><button>More</button></a>
-                </div>
-
-                <div className="item">
-                    <img src="/src/assets/media/CREATIVE ICON.jpg" alt=""/>
-                    <h3>Social Media Management</h3>
-                    <p>Managing and optimizing your social media presence to connect with your audience effectively.</p>
-                    <a href="/src/assets/services.html"><button>More</button></a>
-                </div>
-
-                <div className="item">
-                    <img src="/src/assets/media/SOCMED ICON.png" alt=""/>
-                    <h3>Virtual Admin Services Support</h3>
-                    <p>Delivering administrative support remotely to keep your business organized and efficient.</p>
-                    <a href="/services.html"><button>More</button></a>
-                </div>
-
+          <div className="carousel">
+            <div className="item">
+              {/* Use the imported image variable */}
+              <img src={WEBSITEDEV_Image} alt="Website Development Icon" />
+              <h3>Website Development</h3>
+              <p>Crafting responsive and user-friendly websites tailored to your brand's identity and goals.</p>
+              <a href="/services.html"><button>More</button></a>
             </div>
-        </div>    
-    </section>
 
-    <Footer />
+            <div className="item">
+              {/* Use the imported image variable */}
+              <img src={WEBAPP_Image} alt="Web App Development Icon" />
+              <h3>Web App Development</h3>
+              <p>Building custom web applications that streamline operations and enhance user engagement.</p>
+              <a href="/services.html"><button>More</button></a>
+            </div>
+
+            <div className="item">
+              {/* Use the imported image variable */}
+              <img src={ITSUPPORT_ICON_Image} alt="IT Support Services Icon" />
+              <h3>IT Support Services</h3>
+              <p>Providing reliable technical assistance to ensure your IT infrastructure runs smoothly.</p>
+              <a href="/services.html"><button>More</button></a>
+            </div>
+
+            <div className="item">
+              {/* Use the imported image variable */}
+              <img src={CREATIVE_ICON_Image} alt="Creative Support Services Icon" />
+              <h3>Creative Support Services</h3>
+              <p>Offering graphic design and content creation to bring your ideas to life visually.</p>
+              <a href="/services.html"><button>More</button></a>
+            </div>
+
+            <div className="item">
+              {/* Note: This uses the same image as 'Creative Support Services' but has different text */}
+              {/* Use the imported image variable */}
+              <img src={CREATIVE_ICON_Image} alt="Social Media Management Icon" />
+              <h3>Social Media Management</h3>
+              <p>Managing and optimizing your social media presence to connect with your audience effectively.</p>
+              {/* Corrected href if it was a typo, linking to /services.html directly */}
+              <a href="/services.html"><button>More</button></a>
+            </div>
+
+            <div className="item">
+              {/* Use the imported image variable */}
+              <img src={SOCMED_ICON_Image} alt="Virtual Admin Services Support Icon" />
+              <h3>Virtual Admin Services Support</h3>
+              <p>Delivering administrative support remotely to keep your business organized and efficient.</p>
+              <a href="/services.html"><button>More</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 };
 
 export default Home;
-

@@ -3,6 +3,11 @@ import Header from '../shared/partials/Header';
 import Footer from '../shared/partials/Footer';
 import '../css/about.css';
 
+// Media imports
+import ContactUsBG from '../assets/media/CONTACT US BG.mp4';
+import ConnectWithUsImage from '../assets/media/CONNECT WITH US.png';
+import MapImage from '../assets/media/MAP.jpg';
+
 const Contact: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -15,7 +20,7 @@ const Contact: React.FC = () => {
 
       <section className="hero-video">
         <video autoPlay muted loop playsInline>
-          <source src="/src/assets/media/CONTACT US BG.mp4" type="video/mp4" />
+          <source src={ContactUsBG} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -52,7 +57,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="s3contactsInfo">
-            <img src="/media/CONNECT WITH US.png" alt="" />
+            <img src={ConnectWithUsImage} alt="Connect with us" />
           </div>
         </div>
       </section>
@@ -60,7 +65,7 @@ const Contact: React.FC = () => {
       <section className="s4Contacts">
         <div className="s3main">
           <div className="s3contactsInfo">
-            <img src="/media/MAP.jpg" alt="" />
+            <img src={MapImage} alt="Map" />
           </div>
 
           <div className="s4contactsInfo">

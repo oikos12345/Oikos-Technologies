@@ -148,7 +148,6 @@
 
 /*section 4*/
 .section4 {
-  background-image: url(/src/assets/media/MEET\ OUR\ TEAM.jpg);
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,6 +276,7 @@
   text-align: center;
   color: #000;
 }
+
 .main-container{
   background-color: rgba(255, 255, 255, 0.7);
   height: auto;
@@ -594,7 +594,7 @@
   cursor: pointer;
   z-index: 1000;
   position: fixed;
-  top: 30px;
+  top: 23px;
   right: 20px;
 }
 .hamburger span {
@@ -670,6 +670,36 @@
 .personInfo2 {
   order: 1;
 }
+
+/* Careers */
+.c2main {
+  flex-direction: column;
+  text-align: center;
+}
+.c2mainContent {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+}
+.c2mainContent button{
+  margin: 4% 0 0 0;
+
+}
+
+/* Contact */
+.s3main{
+  flex-direction: column;
+  text-align: center;
+}
+.s3contactsInfo {
+  width: 100%;
+}  
+.s4contactsInfo {
+  width: 100%;
+  order: -1;
+}
+
+
 /*footer*/
 .footer-top{
   display: none;
@@ -694,20 +724,27 @@
 .ourServices h1{
   font-size: 30px;
 }
+
+.rightPic{
+  margin: 2%;
+  background-color: rgba(217, 217, 217, 0.7);
+  border-radius: 10px;
+}
+
+.infoContainer{
+  width: auto;
+  margin: 3%;
+}
 .imageContainer{
-  width: 45%;
+  width: auto;
+  margin-bottom: 3%;
 }
 .imageContainer img{
+  border-radius: 15px;
   width: 100%;
   display: block;
 }
-.infoContainer{
-  margin-left: 1%;
-}
 
-.rightPic .imageContainer{
-  order: 1;
-}
 .infoTitle img{
   height: 30px;
 }
@@ -724,6 +761,7 @@
 .infoContainer li{
   margin-left: 5%;
 }
+
 }
 
 @media only screen and (max-width: 391px) {

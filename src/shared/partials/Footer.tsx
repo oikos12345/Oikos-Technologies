@@ -1,6 +1,8 @@
 // src/components/Footer.tsx
 import '../../css/style.css'
 
+import fbLogo from '../../assets/media/FB.png';
+
 const Footer = () => {
   return (
     <footer>
@@ -9,7 +11,7 @@ const Footer = () => {
           <h3>VISIT US.</h3>
           <p>
             <a href="https://www.facebook.com/OikosTechnologies">
-              <img src="/src/assets/media/FB.png" alt="Facebook" className="icon" />
+              <img src={fbLogo} alt="Facebook" className="icon" />
             </a>{' '}
             Facebook | B2 L38 Champaca St., Maligaya Park Subd., Novaliches,
             <br />
@@ -24,7 +26,7 @@ const Footer = () => {
 
       <div className="mobile-footer">
         <a href="https://www.facebook.com/OikosTechnologies">
-          <img src="/src/assets/media/FB.png" alt="Facebook" />
+          <img src={fbLogo} alt="Facebook" />
         </a>
       </div>
 

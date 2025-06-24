@@ -77,7 +77,7 @@ const Home = () => {
         <div className="main-container2">
 
           <div className="image">
-            <img src={WHYCHOOSEUS_Image} alt="Why Choose Us" /> {/* Added alt for accessibility */}
+            <img src={WHYCHOOSEUS_Image} alt="Why Choose Us" /> 
           </div>
 
           <div className="paragraphS22">
@@ -89,12 +89,13 @@ const Home = () => {
             <p>
               Our team is driven by a passion for excellence, ensuring each
               project we take on is developed with care, precision, and
-              forward-thinking technology.
+              forward-thinking technology.  
+              We prioritize our clients’ needs by offering personalized support 
+              and reliable after-sales service — because your success is our success.
             </p>
             <p>
-              We prioritize our clients’ needs by offering personalized support
-              and reliable after-sales service — because your success is our
-              success.
+              From responsive customer service to future-ready development, 
+              choosing us means choosing a partner committed to your long-term growth.
             </p>
           </div>
 
@@ -149,28 +150,28 @@ const Home = () => {
               <img src={WEBSITEDEV_Image} alt="Website Development Icon" />
               <h3>Website Development</h3>
               <p>Crafting responsive and user-friendly websites tailored to your brand's identity and goals.</p>
-              <a href="/services.html"><button>More</button></a>
+              <Link to="/services"><button>More</button></Link>
             </div>
 
             <div className="item">
               <img src={WEBAPP_Image} alt="Web App Development Icon" />
               <h3>Web App Development</h3>
               <p>Building custom web applications that streamline operations and enhance user engagement.</p>
-              <a href="/services.html"><button>More</button></a>
+              <Link to="/services"><button>More</button></Link>
             </div>
 
             <div className="item">
               <img src={ITSUPPORT_ICON_Image} alt="IT Support Services Icon" />
               <h3>IT Support Services</h3>
               <p>Providing reliable technical assistance to ensure your IT infrastructure runs smoothly.</p>
-              <a href="/services.html"><button>More</button></a>
+              <Link to="/services"><button>More</button></Link>
             </div>
 
             <div className="item">
               <img src={CREATIVE_ICON_Image} alt="Creative Support Services Icon" />
               <h3>Creative Support Services</h3>
               <p>Offering graphic design and content creation to bring your ideas to life visually.</p>
-              <a href="/services.html"><button>More</button></a>
+              <Link to="/services"><button>More</button></Link>
             </div>
 
             <div className="item">

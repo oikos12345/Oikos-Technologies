@@ -3,6 +3,9 @@ import '../css/about.css';
 import Header from '../shared/partials/Header';
 import Footer from '../shared/partials/Footer';
 
+// Media import
+import CareersBG from '../assets/media/CAREERS BG.mp4';
+
 const Careers = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -10,10 +13,9 @@ const Careers = () => {
     <>
       <Header />
 
-      {/* Hero Section */}
       <section className="hero-video">
         <video autoPlay muted loop playsInline>
-          <source src="/src/assets/media/CAREERS BG.mp4" type="video/mp4" />
+          <source src={CareersBG} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -25,7 +27,6 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* Intern Section */}
       <section className="careers2">
         <h1>WE ARE ACCEPTING INTERNS!</h1>
 
@@ -35,7 +36,7 @@ const Careers = () => {
             <p>We are searching for ambitious, creative, and driven individuals who are ready to build, innovate, and grow with us.</p>
             <br />
             <p>At Oikos Technologies, we don’t just develop digital solutions — we craft meaningful experiences. From web development to IT support and creative services, our team thrives on collaboration, curiosity, and purpose.</p>
-            <button onClick={() => setModalOpen(true)}>Apply Now</button>
+
           </div>
 
           <div className="c2mainContent">
@@ -43,6 +44,7 @@ const Careers = () => {
             <p>At Oikos Technologies, we’re more than a team — we’re a community of innovators, problem-solvers, and creators. We’re looking for individuals who are not only skilled, but curious, motivated, and ready to grow.</p>
             <br />
             <p>Whether you're a developer, designer, strategist, or support specialist, you’ll find a place here to sharpen your skills, take ownership, and collaborate on work that matters.</p>
+            <button onClick={() => setModalOpen(true)}>Apply Now</button>
           </div>
         </div>
       </section>
@@ -66,7 +68,6 @@ const Careers = () => {
               <input type="file" name="attachment" accept=".pdf,.doc,.docx" required />
               <button type="submit">SUBMIT</button>
               <p><a href="#" className="cancel" onClick={(e) => { e.preventDefault(); setModalOpen(false); }}>Cancel</a></p>
-            
             </form>
           </div>
         </div>

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import '../../css/about.css'
 
+import oikosNoBg from '../../assets/media/OIKOS NO BG.png';
+
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,7 +21,7 @@ const Header = () => {
             </div>  
 
             <Link to="/">
-                <img src='/src/assets/media/OIKOS NO BG.png' />
+                <img src={oikosNoBg} alt="Oikos Logo"/>
             </Link>
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>

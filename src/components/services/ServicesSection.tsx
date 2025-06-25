@@ -40,7 +40,9 @@ const ServicesSection: React.FC = () => {
 
         {/* Website Development */}
         <div className="rightPic">
+
           <div className="infoContainer">
+            
             <div className="infoTitle">
               <img src={WebsiteDevIcon} alt="Website Dev Icon" />
               <h2>Website Development</h2>

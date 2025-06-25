@@ -65,7 +65,9 @@ const Contact: React.FC = () => {
       <section className="s4Contacts">
         <div className="s3main">
           <div className="s3contactsInfo">
-            <img src={MapImage} alt="Map" />
+            <a href="https://www.google.com/maps/dir/15.1846912,120.602624/14.72407,121.03614/@14.7424757,120.3127884,197150m/data=!3m1!1e3!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              <img src={MapImage} alt="Map" />
+            </a>
           </div>
 
           <div className="s4contactsInfo">
